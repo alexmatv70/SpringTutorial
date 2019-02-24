@@ -11,7 +11,7 @@ public class ScheduledMsgSender {
     @Autowired
     private DemoMsgProducer producer;
 
-    @Scheduled(initialDelay = 1000, fixedRate = 2000)
+    @Scheduled(initialDelay = 2000, fixedRate = 5000)
     void run() {
         producer.send("Hello " + new Date());
     }

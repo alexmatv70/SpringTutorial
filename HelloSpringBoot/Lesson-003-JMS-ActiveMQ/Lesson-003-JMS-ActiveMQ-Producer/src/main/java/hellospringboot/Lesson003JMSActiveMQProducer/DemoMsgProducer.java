@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DemoMsgProducer {
-    private Logger log = LoggerFactory.getLogger(DemoMsgProducer.class);
+    private final Logger log = LoggerFactory.getLogger(DemoMsgProducer.class);
 
     @Autowired
     JmsTemplate jmsTemplate;

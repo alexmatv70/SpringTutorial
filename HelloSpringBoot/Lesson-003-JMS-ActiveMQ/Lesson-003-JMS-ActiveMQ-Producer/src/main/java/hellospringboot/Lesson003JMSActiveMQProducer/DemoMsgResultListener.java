@@ -13,7 +13,7 @@ import javax.jms.Session;
 
 @Component
 public class DemoMsgResultListener {
-    private Logger log = LoggerFactory.getLogger(DemoMsgResultListener.class);
+    private final Logger log = LoggerFactory.getLogger(DemoMsgResultListener.class);
 
     @JmsListener(destination = "demo.queue.result")
     public void receiveResult(
@@ -22,14 +22,7 @@ public class DemoMsgResultListener {
             Message message,
             Session session
     ) {
-        log.info("received result <" + body + ">");
-        log.info("- - - - - - - - - - - - - - - - - - - - - - - -");
-        log.info("######          Message Details           #####");
-        log.info("- - - - - - - - - - - - - - - - - - - - - - - -");
-        log.info("headers: " + headers);
-        log.info("message: " + message);
-        log.info("session: " + session);
-        log.info("- - - - - - - - - - - - - - - - - - - - - - - -");
+        log.info("Received result: " + body);
     }
 
 
