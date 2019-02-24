@@ -12,7 +12,12 @@ public class ScheduledMsgSender {
     private DemoMsgProducer producer;
 
     @Scheduled(initialDelay = 2000, fixedRate = 5000)
+    void sendMsg() {
+        producer.sendMsg("Hello " + new Date());
+    }
+
+    @Scheduled(initialDelay = 2000, fixedRate = 5000)
     void run() {
-        producer.send("Hello " + new Date());
+        producer.sendDto(new DemoDTO("Hello DTO"));
     }
 }

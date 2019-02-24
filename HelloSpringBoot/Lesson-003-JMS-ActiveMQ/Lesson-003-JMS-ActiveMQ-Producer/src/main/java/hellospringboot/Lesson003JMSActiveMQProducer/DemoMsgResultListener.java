@@ -16,7 +16,7 @@ public class DemoMsgResultListener {
     private final Logger log = LoggerFactory.getLogger(DemoMsgResultListener.class);
 
     @JmsListener(destination = "demo.queue.result")
-    public void receiveResult(
+    public void receiveDemoResult(
             @Payload String body,
             @Headers MessageHeaders headers,
             Message message,
@@ -25,5 +25,14 @@ public class DemoMsgResultListener {
         log.info("Received result: " + body);
     }
 
+    @JmsListener(destination = "dto.queue.result")
+    public void receiveDtoResult(
+            @Payload String body,
+            @Headers MessageHeaders headers,
+            Message message,
+            Session session
+    ) {
+        log.info("Received DTO result: " + body);
+    }
 
 }
