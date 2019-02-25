@@ -9,3 +9,4 @@ This project illustrates how to receive JMS messages from ActiveMQ broker and se
 
 https://www.devglan.com/spring-boot/spring-boot-jms-activemq-example
 http://activemq.apache.org/activemq-5158-release.html
+https://stackoverflow.com/questions/40144561/how-to-listen-to-topic-using-spring-boot-jms
