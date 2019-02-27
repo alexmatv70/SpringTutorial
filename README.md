@@ -11,7 +11,7 @@ Dependency Injection, Scheduling, Async, Events, Cache, JPA.
 
 ### HelloSpringBoot
 Contains set of projects that demonstrate Spring Boot:
-Rest Repositories, Rest MVC, JMS
+Rest Repositories, Rest MVC, JMS, unit and integration testing
 
 ### HelloSpringCloud
 Contains set of projects that demonstrate Spring Cloud:

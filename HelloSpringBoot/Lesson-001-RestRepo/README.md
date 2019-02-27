@@ -1,6 +1,6 @@
 # Rest Repository
 
-This project demonstrates using of REST Repositories
+This project demonstrates using of REST Repositories, unit and integration testing.
 
 ## test
 ./mvnw test
