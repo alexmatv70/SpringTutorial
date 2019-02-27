@@ -9,6 +9,14 @@ and how to use it.
 Contains set of projects that demonstrate basic Spring features:
 Dependency Injection, Scheduling, Async, Events, Cache, JPA.
 
+### HelloSpringBoot
+Contains set of projects that demonstrate Spring Boot:
+Rest Repositories, Rest MVC, JMS
+
+### HelloSpringCloud
+Contains set of projects that demonstrate Spring Cloud:
+Config, Discovery, Gateway, Feign Client, Hystrix, Sleuth, Zipkin 
+
 ## Prerequisites
 
 1) JDK 1.8

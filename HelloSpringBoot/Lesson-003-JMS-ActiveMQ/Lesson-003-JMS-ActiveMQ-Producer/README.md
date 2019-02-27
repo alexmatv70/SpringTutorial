@@ -3,7 +3,7 @@
 This project illustrates how to send JMS messages to ActiveMQ broker and handle responces:
 
 ### Annotations
-`@EnableJms`
+`@EnableJms, @JmsListener`
 
 ### Interfaces and Classes 
 `JmsTemplate`
